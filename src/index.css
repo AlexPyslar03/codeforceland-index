@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #4a90e2; /* Основной цвет для акцентов */
+  --secondary-color: #333; /* Темный цвет для текста */
+  --bg-light: #f7f9fc; /* Легкий фон для областей */
+  --hover-color: #3a7cc2; /* Цвет при наведении */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /* Основной шрифт для текста */
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-light);
+  color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+.header, footer {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif; /* Шрифт для заголовка */
+  font-weight: 700; /* Жирный вес */
+}
+
+footer p {
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif; /* Обновленный шрифт для текста в футере */
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.service-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-description:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-description p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Обновленный шрифт для текста описания сервиса */
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+footer .link-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Вертикальное выравнивание */
+  justify-content: center; /* Горизонтальное выравнивание */
+  margin-bottom: 20px; /* Отступ между заголовком и текстом */
+}
+
+.logo {
+  margin-right: 20px; /* Отступ между логотипом и текстом */
+}
